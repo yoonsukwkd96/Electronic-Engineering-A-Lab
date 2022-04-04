@@ -1,5 +1,8 @@
 # Electronic-Engineering-A-Lab
 
+# Team Mainz
+
+
 Members of the group:
 
 Yigitcan Aydin
