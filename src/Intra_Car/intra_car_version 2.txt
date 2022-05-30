@@ -1,0 +1,98 @@
+#include<iostream>
+#include<cstdlib>
+#include<cstdlib>
+#include<ctime>
+
+using namespace std;
+
+int getrand(int min,int max);
+int direction();
+int destination();
+void get_id(int id);
+void send_id(int id);
+void send_direction(int direct);
+void send_destination(int dest);
+
+int car_id;
+int dest;
+
+int main(){
+    srand(time(0));
+
+    return 1;
+}
+
+int getrand(int min,int max) //return a number x s.t. min <= x < max
+{
+    return(rand()%(max-min)+min);
+}
+
+// sensor detection from random directions
+// values> 1: north, 2: east, 3: south, 4: west
+int direction(){
+    int direct = getrand(1,5);
+
+    return direct;
+}
+
+int destination (){
+
+
+    cout << "Destination (North:1 South:2 West:3 East:4): "
+    cin << dest;
+
+    return dest;
+}
+
+void get_id (int id){
+
+class Car_id: {
+   public:
+      static Car_id * instance ();
+      uint32_t next () { return Car_id++; }
+   private:
+      Car_id () : Car_id(0) {}
+
+      static Car_id * only_copy;
+      uint32_t Car_id;
+}
+
+Car_id *
+Car_id::instance () {
+   if (!only_copy) {
+      only_copy = new Car_id();
+   }
+   return only_copy;
+
+
+}
+}
+
+int send_id (int *Car_id){
+    return Car_id;
+}
+
+//int main()
+//{
+//  int x = Car_id;
+//
+//  func(&x);
+//
+//  //printf("%d %d\n", Car_id);
+//
+//  cout << "Car_id - " << x << endl;
+//
+//
+//
+//  return 0;
+//
+//
+//}
+
+int send_direction(int direct){
+    return direct;
+}
+
+int send_destination(int dest){
+    return dest;
+}

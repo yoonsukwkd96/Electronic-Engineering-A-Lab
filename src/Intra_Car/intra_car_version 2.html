@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>E:\EEE\intra_car\intra_car.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.style11 { color: #000000; background-color: #FFFFFF; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #A0A0A0; }
+.style23 { color: #A0A0A0; }
+.style65 { color: #A0A0A0; }
+.style87 { color: #A0A0A0; }
+.style2 { color: #BEBEE6; }
+.style66 { color: #BEBEE6; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #8080FF; font-weight: bold; }
+.style88 { color: #8080FF; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #8080FF; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #008080; }
+.style18 { color: #800000; }
+.style82 { color: #800000; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style20 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+--></style></head>
+<body>
+<pre>
+<code><span style="font: 8pt Courier New;"><span class="body"> 1 </span><span class="style9">#include&lt;iostream&gt;</span>
+<span class="body"> 2  </span><span class="style9">#include&lt;cstdlib&gt;</span>
+<span class="body"> 3  </span><span class="style9">#include&lt;cstdlib&gt;</span>
+<span class="body"> 4  </span><span class="style9">#include&lt;ctime&gt;</span>
+<span class="body"> 5  </span>
+<span class="body"> 6  </span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;</span>
+<span class="body"> 7  </span>
+<span class="body"> 8  </span><span class="style5">int </span><span class="style11">getrand</span><span class="style10">(</span><span class="style5">int </span><span class="style16">min</span><span class="style10">,</span><span class="style5">int </span><span class="style16">max</span><span class="style10">);</span>
+<span class="body"> 9  </span><span class="style5">int </span><span class="style11">direction</span><span class="style10">();</span>
+<span class="body">10  </span><span class="style5">int </span><span class="style11">destination</span><span class="style10">();</span>
+<span class="body">11  </span><span class="style5">void </span><span class="style11">get_id</span><span class="style10">(</span><span class="style5">int </span><span class="style11">id</span><span class="style10">);</span>
+<span class="body">12  </span><span class="style5">void </span><span class="style11">send_id</span><span class="style10">(</span><span class="style5">int </span><span class="style11">id</span><span class="style10">);</span>
+<span class="body">13  </span><span class="style5">void </span><span class="style11">send_direction</span><span class="style10">(</span><span class="style5">int </span><span class="style11">direct</span><span class="style10">);</span>
+<span class="body">14  </span><span class="style5">void </span><span class="style11">send_destination</span><span class="style10">(</span><span class="style5">int </span><span class="style11">dest</span><span class="style10">);</span>
+<span class="body">15  </span>
+<span class="body">16  </span><span class="style5">int </span><span class="style11">car_id</span><span class="style10">;</span>
+<span class="body">17  </span><span class="style5">int </span><span class="style11">dest</span><span class="style10">;</span>
+<span class="body">18  </span>
+<span class="body">19  </span><span class="style5">int </span><span class="style11">main</span><span class="style10">(){</span>
+<span class="body">20      </span><span class="style11">srand</span><span class="style10">(</span><span class="style11">time</span><span class="style10">(</span><span class="style4">0</span><span class="style10">));</span>
+<span class="body">21  </span>
+<span class="body">22      </span><span class="style5">return </span><span class="style4">1</span><span class="style10">;</span>
+<span class="body">23  </span><span class="style10">}</span>
+<span class="body">24  </span>
+<span class="body">25  </span><span class="style5">int </span><span class="style11">getrand</span><span class="style10">(</span><span class="style5">int </span><span class="style16">min</span><span class="style10">,</span><span class="style5">int </span><span class="style16">max</span><span class="style10">) </span><span class="style2">//return a number x s.t. min &lt;= x &lt; max</span>
+<span class="body">26  </span><span class="style10">{</span>
+<span class="body">27      </span><span class="style5">return</span><span class="style10">(</span><span class="style11">rand</span><span class="style10">()%(</span><span class="style16">max</span><span class="style10">-</span><span class="style16">min</span><span class="style10">)+</span><span class="style16">min</span><span class="style10">);</span>
+<span class="body">28  </span><span class="style10">}</span>
+<span class="body">29  </span>
+<span class="body">30  </span><span class="style2">// sensor detection from random directions</span>
+<span class="body">31  </span><span class="style2">// values&gt; 1: north, 2: east, 3: south, 4: west</span>
+<span class="body">32  </span><span class="style5">int </span><span class="style11">direction</span><span class="style10">(){</span>
+<span class="body">33      </span><span class="style5">int </span><span class="style11">direct </span><span class="style10">= </span><span class="style11">getrand</span><span class="style10">(</span><span class="style4">1</span><span class="style10">,</span><span class="style4">5</span><span class="style10">);</span>
+<span class="body">34  </span>
+<span class="body">35      </span><span class="style5">return </span><span class="style11">direct</span><span class="style10">;</span>
+<span class="body">36  </span><span class="style10">}</span>
+<span class="body">37  </span>
+<span class="body">38  </span><span class="style5">int </span><span class="style11">destination </span><span class="style10">(){</span>
+<span class="body">39  </span>
+<span class="body">40  </span>
+<span class="body">41      </span><span class="style16">cout </span><span class="style10">&lt;&lt; </span><span class="style6">"Destination (North:1 South:2 West:3 East:4): "</span>
+<span class="body">42      </span><span class="style16">cin </span><span class="style10">&lt;&lt; </span><span class="style11">dest</span><span class="style10">;</span>
+<span class="body">43  </span>
+<span class="body">44      </span><span class="style5">return </span><span class="style11">dest</span><span class="style10">;</span>
+<span class="body">45  </span><span class="style10">}</span>
+<span class="body">46  </span>
+<span class="body">47  </span><span class="style5">void </span><span class="style11">get_id </span><span class="style10">(</span><span class="style5">int </span><span class="style11">id</span><span class="style10">){</span>
+<span class="body">48  </span>
+<span class="body">49  </span><span class="style5">class </span><span class="style11">Car_id</span><span class="style10">: {</span>
+<span class="body">50     </span><span class="style5">public</span><span class="style10">:</span>
+<span class="body">51        </span><span class="style5">static </span><span class="style11">Car_id </span><span class="style10">* </span><span class="style11">instance </span><span class="style10">();</span>
+<span class="body">52        </span><span class="style5">uint32_t </span><span class="style11">next </span><span class="style10">() { </span><span class="style5">return </span><span class="style11">Car_id</span><span class="style10">++; }</span>
+<span class="body">53     </span><span class="style5">private</span><span class="style10">:</span>
+<span class="body">54        </span><span class="style11">Car_id </span><span class="style10">() : </span><span class="style11">Car_id</span><span class="style10">(</span><span class="style4">0</span><span class="style10">) {}</span>
+<span class="body">55  </span>
+<span class="body">56        </span><span class="style5">static </span><span class="style11">Car_id </span><span class="style10">* </span><span class="style11">only_copy</span><span class="style10">;</span>
+<span class="body">57        </span><span class="style5">uint32_t </span><span class="style11">Car_id</span><span class="style10">;</span>
+<span class="body">58  </span><span class="style10">}</span>
+<span class="body">59  </span>
+<span class="body">60  </span><span class="style11">Car_id </span><span class="style10">*</span>
+<span class="body">61  </span><span class="style11">Car_id</span><span class="style10">::</span><span class="style11">instance </span><span class="style10">() {</span>
+<span class="body">62     </span><span class="style5">if </span><span class="style10">(!</span><span class="style11">only_copy</span><span class="style10">) {</span>
+<span class="body">63        </span><span class="style11">only_copy </span><span class="style10">= </span><span class="style5">new </span><span class="style11">Car_id</span><span class="style10">();</span>
+<span class="body">64     </span><span class="style10">}</span>
+<span class="body">65     </span><span class="style5">return </span><span class="style11">only_copy</span><span class="style10">;</span>
+<span class="body">66  </span>
+<span class="body">67  </span>
+<span class="body">68  </span><span class="style10">}</span>
+<span class="body">69  </span><span class="style10">}</span>
+<span class="body">70  </span>
+<span class="body">71  </span><span class="style5">int </span><span class="style11">send_id </span><span class="style10">(</span><span class="style5">int </span><span class="style10">*</span><span class="style11">Car_id</span><span class="style10">){</span>
+<span class="body">72      </span><span class="style5">return </span><span class="style11">Car_id</span><span class="style10">;</span>
+<span class="body">73  </span><span class="style10">}</span>
+<span class="body">74  </span>
+<span class="body">75  </span><span class="style2">//int main()</span>
+<span class="body">76  </span><span class="style2">//{</span>
+<span class="body">77  </span><span class="style2">//  int x = Car_id;</span>
+<span class="body">78  </span><span class="style2">//</span>
+<span class="body">79  </span><span class="style2">//  func(&amp;x);</span>
+<span class="body">80  </span><span class="style2">//</span>
+<span class="body">81  </span><span class="style2">//  //printf("%d %d\n", Car_id);</span>
+<span class="body">82  </span><span class="style2">//</span>
+<span class="body">83  </span><span class="style2">//  cout &lt;&lt; "Car_id - " &lt;&lt; x &lt;&lt; endl;</span>
+<span class="body">84  </span><span class="style2">//</span>
+<span class="body">85  </span><span class="style2">//</span>
+<span class="body">86  </span><span class="style2">//</span>
+<span class="body">87  </span><span class="style2">//  return 0;</span>
+<span class="body">88  </span><span class="style2">//</span>
+<span class="body">89  </span><span class="style2">//</span>
+<span class="body">90  </span><span class="style2">//}</span>
+<span class="body">91  </span>
+<span class="body">92  </span><span class="style5">int </span><span class="style11">send_direction</span><span class="style10">(</span><span class="style5">int </span><span class="style11">direct</span><span class="style10">){</span>
+<span class="body">93      </span><span class="style5">return </span><span class="style11">direct</span><span class="style10">;</span>
+<span class="body">94  </span><span class="style10">}</span>
+<span class="body">95  </span>
+<span class="body">96  </span><span class="style5">int </span><span class="style11">send_destination</span><span class="style10">(</span><span class="style5">int </span><span class="style11">dest</span><span class="style10">){</span>
+<span class="body">97      </span><span class="style5">return </span><span class="style11">dest</span><span class="style10">;</span>
+<span class="body">98  </span><span class="style10">}</span></span>
+</code></pre>
+</body>
+</html>
