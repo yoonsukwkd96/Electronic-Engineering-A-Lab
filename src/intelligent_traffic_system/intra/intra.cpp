@@ -1,5 +1,3 @@
-
-
 // Change the cars and run_time variable to the desired values.
 //Directions: north: 1, south: 2, west: 3, east: 4
 #include <iostream>
@@ -120,7 +118,7 @@ void add_element_array (int *arr, int element){
 
 int getrand(int min,int max) //return a number x s.t. min <= x < max
 {
-	     return(rand()%(max-min)+min);
+	     return(rand_r()%(max-min)+min);
 }
 
 int directions (int dir, int kk){
@@ -215,8 +213,6 @@ void init()
     pthread_mutex_init(&EtoWLock, NULL);
     pthread_mutex_init(&EtoNLock, NULL);
     pthread_mutex_init(&EtoELock, NULL);
-
-
 }
 
 // This is a function for a car moving from north to south.
@@ -306,7 +302,6 @@ void *northToSouth(void *null){
 // This is a function for a car moving north to west.
 void *northToWest(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -363,7 +358,6 @@ void *northToWest(void *null)
                 wd.pop();
                 cout << "Car from NORTH lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&wdLock);
-
                 break;
         }else{
             usleep(2);
@@ -375,7 +369,6 @@ void *northToWest(void *null)
 // This is a function for a car moving north to east.
 void *northToEast(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -454,7 +447,6 @@ void *northToEast(void *null)
                 ed.pop();
                 cout << "Car from NORTH lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&edLock);
-
                 break;
         }else{
             usleep(2);
@@ -466,7 +458,6 @@ void *northToEast(void *null)
 // This is a function for a car moving north to north.
 void *northToNorth(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -529,7 +520,6 @@ void *northToNorth(void *null)
                 nd.pop();
                 cout << "Car from NORTH lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&ndLock);
-
                 break;
         }else{
             usleep(2);
@@ -541,7 +531,6 @@ void *northToNorth(void *null)
 // This is a function for a car moving south to north.
 void *southToNorth(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -614,7 +603,6 @@ void *southToNorth(void *null)
                 nd.pop();
                 cout << "Car from SOUTH lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&ndLock);
-
                 break;
         }else{
             usleep(2);
@@ -626,7 +614,6 @@ void *southToNorth(void *null)
 // This is a function for a car moving south to west.
 void *southToWest(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -705,7 +692,6 @@ void *southToWest(void *null)
                 wd.pop();
                 cout << "Car from SOUTH lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&wdLock);
-
                 break;
         }else{
             usleep(2);
@@ -774,7 +760,6 @@ void *southToEast(void *null)
                 ed.pop();
                 cout << "Car from SOUTH lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&edLock);
-
                 break;
         }else{
             usleep(2);
@@ -786,7 +771,6 @@ void *southToEast(void *null)
 // This is a function for a car moving south to south.
 void *southToSouth(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -849,7 +833,6 @@ void *southToSouth(void *null)
                 sd.pop();
                 cout << "Car from SOUTH lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&sdLock);
-
                 break;
         }else{
             usleep(2);
@@ -861,7 +844,6 @@ void *southToSouth(void *null)
 // This is a function for a car moving west to east.
 void *westToEast(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -934,7 +916,6 @@ void *westToEast(void *null)
                 ed.pop();
                 cout << "Car from WEST lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&edLock);
-
                 break;
         }else{
             usleep(2);
@@ -1003,7 +984,6 @@ void *westToSouth(void *null)
                 sd.pop();
                 cout << "Car from WEST lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&sdLock);
-
                 break;
         }else{
             usleep(2);
@@ -1015,7 +995,6 @@ void *westToSouth(void *null)
 // This is a function for a car moving west to north.
 void *westToNorth(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -1094,7 +1073,6 @@ void *westToNorth(void *null)
                 nd.pop();
                 cout << "Car from WEST lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&ndLock);
-
                 break;
         }else{
             usleep(2);
@@ -1106,7 +1084,6 @@ void *westToNorth(void *null)
 // This is a function for a car moving west to west.
 void *westToWest(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -1169,7 +1146,6 @@ void *westToWest(void *null)
                 wd.pop();
                 cout << "Car from WEST lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&wdLock);
-
                 break;
         }else{
             usleep(2);
@@ -1181,7 +1157,6 @@ void *westToWest(void *null)
 // This is a function for a car moving east to west.
 void *eastToWest(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -1266,7 +1241,6 @@ void *eastToWest(void *null)
 // This is a function for a car moving east to north.
 void *eastToNorth(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -1323,7 +1297,6 @@ void *eastToNorth(void *null)
                 nd.pop();
                 cout << "Car from EAST lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&ndLock);
-
                 break;
         }else{
             usleep(2);
@@ -1335,7 +1308,6 @@ void *eastToNorth(void *null)
 // This is a function for a car moving east to south.
 void *eastToSouth(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -1414,7 +1386,6 @@ void *eastToSouth(void *null)
                 sd.pop();
                 cout << "Car from EAST lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&sdLock);
-
                 break;
         }else{
             usleep(2);
@@ -1426,7 +1397,6 @@ void *eastToSouth(void *null)
 // This is a function for a car moving east to east.
 void *eastToEast(void *null)
 {
-
     int localID;
     double duration; //for checking how long a car will be waiting at the front of its lane
     clock_t start;
@@ -1489,7 +1459,6 @@ void *eastToEast(void *null)
                 ed.pop();
                 cout << "Car from EAST lane with ID: " << localID << " LEAVING the intersection." << endl<<endl;
                 pthread_mutex_unlock(&edLock);
-
                 break;
         }else{
             usleep(2);
@@ -1508,10 +1477,8 @@ int main()
     
     for(int i = 0; i < cars; i++) //first car will be car with ID 1
     {
-       
         k = getrand(1,5); // outgoing direction
         direction = getrand(1,5);
-
         d = directions(direction, k);
 
         if(d == 11)
