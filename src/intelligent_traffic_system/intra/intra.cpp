@@ -120,7 +120,7 @@ void add_element_array (int *arr, int element){
 
 int getrand(int min,int max) //return a number x s.t. min <= x < max
 {
-	     return(rand()%(max-min)+min);
+	     return(rand_r()%(max-min)+min);
 }
 
 int directions (int dir, int kk){
