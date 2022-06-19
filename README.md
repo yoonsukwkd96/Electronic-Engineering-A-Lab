@@ -1,4 +1,4 @@
-# Electronic-Engineering-A-Lab
+# SMART TRAFFIC SYSTEM: Project for Electronic Engineering-A Lab
 
 # Team Mainz
 
