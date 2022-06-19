@@ -7,7 +7,7 @@ Members of the group:
 
 Yigitcan Aydin
 
-Younsuk Choi
+Younsuk Choi (Discontinued)
 
 Syed Rafsan Ishtiaque
 
