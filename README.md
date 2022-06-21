@@ -14,7 +14,8 @@ Syed Rafsan Ishtiaque
 
 
 C++ implementation: Electronic-Engineering-A-Lab/src/intra_simple.cpp
-                    Other C++ files are for future work
+
+Other C++ files are for future work
                     
 FreeRTOS implementation: Electronic-Engineering-A-Lab/src/intelligent_traffic_system/
 
