@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>
+
+const int N = 4;         // cars from 4 directions
+typedef int[0,N-1] id_c;
+
+chan        proceed[N], brake[N], move[N];
+urgent chan begin[N];
+</declaration>
+	<template>
+		<name x="40" y="16">Car</name>
+		<parameter>const id_c id</parameter>
+		<declaration>clock x;</declaration>
+		<location id="id0" x="-170" y="102">
+			<name x="-238" y="85">Neutral</name>
+		</location>
+		<location id="id1" x="-51" y="289">
+			<name x="-68" y="306">Brake</name>
+		</location>
+		<location id="id2" x="51" y="102">
+			<name x="67" y="86">Cross</name>
+			<label kind="invariant" x="67" y="102">x&lt;=500</label>
+		</location>
+		<location id="id3" x="-170" y="289">
+			<name x="-234" y="273">Proceed</name>
+			<label kind="invariant" x="-238" y="289">x&lt;=2000</label>
+		</location>
+		<location id="id4" x="51" y="289">
+			<name x="67" y="273">Initiate</name>
+			<label kind="invariant" x="67" y="289">x&lt;= 1500</label>
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-68" y="204">x&gt;=1000</label>
+			<label kind="assignment" x="-68" y="220">x=0</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-153" y="297">x&lt;=1000</label>
+			<label kind="synchronisation" x="-153" y="313">brake[id]?</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-93" y="59">x&gt;=300</label>
+			<label kind="synchronisation" x="-93" y="75">move[id]!</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id3"/>
+			<label kind="synchronisation" x="-93" y="102">proceed[id]!</label>
+			<label kind="assignment" x="-93" y="119">x=0</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id2"/>
+			<label kind="guard" x="68" y="161">x&gt;=700</label>
+			<label kind="assignment" x="68" y="177">x=0</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id4"/>
+			<label kind="synchronisation" x="-17" y="297">begin[id]?</label>
+			<label kind="assignment" x="-17" y="313">x=0</label>
+		</transition>
+	</template>
+	<template>
+		<name x="40" y="16">Crossing</name>
+		<declaration>id_c list[N+1];
+int[0,N] len;
+
+// Put an element at the end of the queue
+void enqueue(id_c element)
+{
+        list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                list[i] = list[i + 1];
+                i++;
+        }
+        list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_c front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_c rear()
+{
+   return list[len - 1];
+}</declaration>
+		<location id="id5" x="127" y="212">
+			<committed/>
+		</location>
+		<location id="id6" x="17" y="306">
+			<name x="8" y="323">Unavailable</name>
+		</location>
+		<location id="id7" x="-144" y="314">
+			<name x="-170" y="272">Available</name>
+		</location>
+		<init ref="id7"/>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+			<label kind="select" x="42" y="187">e : id_c</label>
+			<label kind="synchronisation" x="34" y="204">proceed[e]?</label>
+			<label kind="assignment" x="25" y="221">enqueue(e)</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id7"/>
+			<label kind="select" x="-59" y="153">e : id_c</label>
+			<label kind="guard" x="-59" y="170">e == front()</label>
+			<label kind="synchronisation" x="-59" y="187">move[e]?</label>
+			<label kind="assignment" x="-85" y="204">dequeue()</label>
+			<nail x="17" y="195"/>
+			<nail x="-51" y="246"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id6"/>
+			<label kind="synchronisation" x="85" y="306">brake[rear()]!</label>
+			<nail x="127" y="306"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-76" y="365">len &gt; 0</label>
+			<label kind="synchronisation" x="-76" y="382">begin[front()]!</label>
+			<nail x="-144" y="399"/>
+			<nail x="-127" y="399"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+			<label kind="select" x="-76" y="263">e : id_c</label>
+			<label kind="guard" x="-76" y="280">len == 0</label>
+			<label kind="synchronisation" x="-76" y="306">proceed[e]?</label>
+			<label kind="assignment" x="-110" y="323">enqueue(e)</label>
+		</transition>
+	</template>
+	<system>system Car, Crossing;
+</system>
+	<queries>
+		<query>
+			<formula>
+			</formula>
+			<comment>===== Validation Properties:
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; Gate.Occ
+			</formula>
+			<comment>Gate can receive (and store in queue) msg's from approaching trains.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; Train(0).Cross
+			</formula>
+			<comment>Train 0 can reach crossing.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; Train(1).Cross
+			</formula>
+			<comment>Train 1 can reach crossing.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; Train(0).Cross and Train(1).Stop
+			</formula>
+			<comment>Train 0 can be crossing bridge while Train 1 is waiting to cross.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; Train(0).Cross and (forall (i : id_t) i != 0 imply Train(i).Stop)
+			</formula>
+			<comment>Train 0 can cross bridge while the other trains are waiting to cross.
+			</comment>
+		</query>
+		<query>
+			<formula>
+			</formula>
+			<comment>===== Safety Properties:
+			</comment>
+		</query>
+		<query>
+			<formula>A[] forall (i : id_t) forall (j : id_t) Train(i).Cross &amp;&amp; Train(j).Cross imply i == j
+			</formula>
+			<comment>There is never more than one train crossing the bridge (at
+any time instance).
+			</comment>
+		</query>
+		<query>
+			<formula>A[] Gate.list[N] == 0
+			</formula>
+			<comment>There can never be N elements in the queue (thus the array will not overflow).
+			</comment>
+		</query>
+		<query>
+			<formula>
+			</formula>
+			<comment>===== Liveness Properties:
+			</comment>
+		</query>
+		<query>
+			<formula>Train(0).Appr --&gt; Train(0).Cross
+			</formula>
+			<comment>Whenever a train approaches the bridge, it will eventually cross.
+			</comment>
+		</query>
+		<query>
+			<formula>Train(1).Appr --&gt; Train(1).Cross
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>Train(2).Appr --&gt; Train(2).Cross
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>Train(3).Appr --&gt; Train(3).Cross
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>Train(4).Appr --&gt; Train(4).Cross
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>Train(5).Appr --&gt; Train(5).Cross
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>
+			</formula>
+			<comment>===== Deadlock checking:
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>The system is deadlock-free.
+			</comment>
+		</query>
+	</queries>
+</nta>
