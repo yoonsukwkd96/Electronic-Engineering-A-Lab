@@ -19,6 +19,8 @@ Other C++ files are for future work
                     
 FreeRTOS implementation: Electronic-Engineering-A-Lab/src/intelligent_traffic_system/
 
+VHDL and UPPAAL implementations in respective folders
+
 
 
 
