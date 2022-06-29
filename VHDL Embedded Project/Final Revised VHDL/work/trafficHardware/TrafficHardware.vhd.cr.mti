@@ -1,0 +1,19 @@
+{C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightControllerTB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightControllerTB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TST_BENCH
+-- Compiling architecture behavior of TST_BENCH
+
+} {} {}} {C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightController.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightController.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity light_controller
+-- Compiling architecture lc of light_controller
+
+} {} {}}

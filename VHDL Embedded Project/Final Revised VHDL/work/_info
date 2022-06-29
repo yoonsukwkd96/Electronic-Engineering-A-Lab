@@ -1,0 +1,243 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/intelFPGA_pro/21.2/modelsim_ase/win32aloem
+Efifo_no_flag
+w1654688325
+Z0 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 10
+Z3 dE:/intelFPGA_pro/Traffic
+Z4 8E:/intelFPGA_pro/Traffic/Fifo.vhd
+Z5 FE:/intelFPGA_pro/Traffic/Fifo.vhd
+l0
+Z6 L17 1
+V>9H8H3eom]hNH2D:5POWX2
+!s100 jPW?aUm=QT@UPg`L0fJ^72
+Z7 OV;C;2021.1;73
+32
+!s110 1654688336
+!i10b 1
+!s108 1654688336.000000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/intelFPGA_pro/Traffic/Fifo.vhd|
+Z9 !s107 E:/intelFPGA_pro/Traffic/Fifo.vhd|
+!i113 1
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1 CvgOpt 0
+Emodule_fifo_regs_no_flags
+Z12 w1656536263
+R0
+R1
+R2
+!i122 24
+R3
+R4
+R5
+l0
+R6
+Vb;<<33VRZDj1Ng?cdMG^e1
+!s100 QBo:ke3f:49bOVl>fJX1[0
+R7
+32
+Z13 !s110 1656536495
+!i10b 1
+Z14 !s108 1656536495.000000
+R8
+R9
+!i113 1
+R10
+R11
+Artl
+R0
+R1
+R2
+DEx4 work 25 module_fifo_regs_no_flags 0 22 b;<<33VRZDj1Ng?cdMG^e1
+!i122 24
+l53
+L39 85
+ViCh]aJFFNkIcPa94<aG2b3
+!s100 FOV[>QB1EP01BI^zSO3881
+R7
+32
+R13
+!i10b 1
+R14
+R8
+R9
+!i113 1
+R10
+R11
+Emodule_fifo_regs_no_flags_tb
+Z15 w1656534351
+R0
+R1
+R2
+!i122 25
+R3
+Z16 8E:/intelFPGA_pro/Traffic/fifotst.vhd
+Z17 FE:/intelFPGA_pro/Traffic/fifotst.vhd
+l0
+L5 1
+VGbf^eKMXXh75=djGz>d_e0
+!s100 gm7WIQF`TX]5_UP4`A0gI1
+R7
+32
+R13
+!i10b 1
+R14
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/intelFPGA_pro/Traffic/fifotst.vhd|
+Z19 !s107 E:/intelFPGA_pro/Traffic/fifotst.vhd|
+!i113 1
+R10
+R11
+Abehave
+R0
+R1
+R2
+DEx4 work 28 module_fifo_regs_no_flags_tb 0 22 Gbf^eKMXXh75=djGz>d_e0
+!i122 25
+l44
+Z20 L8 94
+V[mgB[CdPHa`LYz0R`NoE]3
+!s100 =D^[XN@bUzWC_3A679:C42
+R7
+32
+R13
+!i10b 1
+R14
+R18
+R19
+!i113 1
+R10
+R11
+Esystemx
+Z21 w1626527591
+!i122 9
+R3
+Z22 8E:/intelFPGA_pro/Traffic/Smart_Traffic.vhd
+Z23 FE:/intelFPGA_pro/Traffic/Smart_Traffic.vhd
+l0
+L1 1
+VkU:kU>j`eG2E0R^9edABo2
+!s100 Zz]FCl]bO3nV8fL`]7IgS1
+R7
+32
+Z24 !s110 1626529604
+!i10b 1
+Z25 !s108 1626529604.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/intelFPGA_pro/Traffic/Smart_Traffic.vhd|
+Z27 !s107 E:/intelFPGA_pro/Traffic/Smart_Traffic.vhd|
+!i113 1
+R10
+R11
+Asystemx_arch
+DEx4 work 7 systemx 0 22 kU:kU>j`eG2E0R^9edABo2
+!i122 9
+l11
+L7 16
+VDQPzJg0E@o4A3ii=6>[Ch0
+!s100 DMHGZcCA=VBCB:OjUk@C81
+R7
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R10
+R11
+Etraffic_control
+Z28 w1656537221
+R0
+R1
+R2
+!i122 34
+R3
+R4
+R5
+l0
+R6
+Vj?RQzXXz>o`X@L5ebiKV<0
+!s100 Coac;VF`h9hA8mD?k:XKY0
+R7
+32
+Z29 !s110 1656537985
+!i10b 1
+Z30 !s108 1656537985.000000
+R8
+R9
+!i113 1
+R10
+R11
+Atraffic
+R0
+R1
+R2
+DEx4 work 15 traffic_control 0 22 j?RQzXXz>o`X@L5ebiKV<0
+!i122 34
+l53
+L39 84
+VHGILgHoeTcmkNhM6LdgF92
+!s100 cC^0Sng8Dh>cYm0m>N0OW2
+R7
+32
+R29
+!i10b 1
+R30
+R8
+R9
+!i113 1
+R10
+R11
+Etraffic_control_tb
+Z31 w1656537508
+R0
+R1
+R2
+!i122 35
+R3
+R16
+R17
+l0
+L5 1
+VU:Tl89g@JZUbWf2Z:U:7k1
+!s100 4AV29JKCN?42XAN]8hJB]0
+R7
+32
+R29
+!i10b 1
+R30
+R18
+R19
+!i113 1
+R10
+R11
+Amodel
+R0
+R1
+R2
+Z32 DEx4 work 18 traffic_control_tb 0 22 U:Tl89g@JZUbWf2Z:U:7k1
+!i122 35
+l44
+R20
+Z33 VjMj0A69X:@jT88^Q>2fTU3
+Z34 !s100 f8Z5OUzndmf<Pm^?LZnP:3
+R7
+32
+R29
+!i10b 1
+R30
+R18
+R19
+!i113 1
+R10
+R11

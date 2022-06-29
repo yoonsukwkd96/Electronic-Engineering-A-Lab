@@ -1,0 +1,525 @@
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.module_fifo_regs_no_flags_tb
+# vsim -gui work.module_fifo_regs_no_flags_tb 
+# Start time: 13:39:23 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.module_fifo_regs_no_flags_tb(behave)
+# Loading work.module_fifo_regs_no_flags(rtl)
+# ** Error: Bad file format for 'E:/intelFPGA_pro/Traffic/work/module_fifo_regs_no_flags_tb/_primary.dbs'.
+# ** Error: Bad file format for 'E:/intelFPGA_pro/Traffic/work/module_fifo_regs_no_flags_tb/behave.dbs'.
+# ** Error: Bad file format for 'E:/intelFPGA_pro/Traffic/work/module_fifo_regs_no_flags/rtl.dbs'.
+add wave -position insertpoint sim:/module_fifo_regs_no_flags_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Bad file format for 'E:/intelFPGA_pro/Traffic/work/module_fifo_regs_no_flags_tb/behave.dbs'.
+vsim -gui work.module_fifo_regs_no_flags_tb
+# End time: 22:21:04 on Jun 29,2022, Elapsed time: 8:41:41
+# Errors: 7, Warnings: 3
+# vsim -gui work.module_fifo_regs_no_flags_tb 
+# Start time: 22:21:05 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.module_fifo_regs_no_flags_tb(behave)
+# Loading work.module_fifo_regs_no_flags(rtl)
+# ** Error: Bad file format for 'E:/intelFPGA_pro/Traffic/work/module_fifo_regs_no_flags_tb/_primary.dbs'.
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+add wave -position insertpoint sim:/module_fifo_regs_no_flags_tb/*
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Bad file format for 'E:/intelFPGA_pro/Traffic/work/module_fifo_regs_no_flags_tb/behave.dbs'.
+# ** Error: Bad file format for 'E:/intelFPGA_pro/Traffic/work/module_fifo_regs_no_flags/rtl.dbs'.
+# End time: 22:22:31 on Jun 29,2022, Elapsed time: 0:01:26
+# Errors: 6, Warnings: 1
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.module_fifo_regs_no_flags_tb
+# vsim -gui work.module_fifo_regs_no_flags_tb 
+# Start time: 22:23:22 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.module_fifo_regs_no_flags_tb(behave)
+# Loading work.module_fifo_regs_no_flags(rtl)
+add wave -position insertpoint sim:/module_fifo_regs_no_flags_tb/*
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# End time: 22:23:53 on Jun 29,2022, Elapsed time: 0:00:31
+# Errors: 2, Warnings: 2
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.module_fifo_regs_no_flags_tb
+# vsim -gui work.module_fifo_regs_no_flags_tb 
+# Start time: 22:24:36 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.module_fifo_regs_no_flags_tb(behave)
+# Loading work.module_fifo_regs_no_flags(rtl)
+add wave -position insertpoint sim:/module_fifo_regs_no_flags_tb/*
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# End time: 22:25:10 on Jun 29,2022, Elapsed time: 0:00:34
+# Errors: 2, Warnings: 2
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.module_fifo_regs_no_flags_tb
+# vsim -gui work.module_fifo_regs_no_flags_tb 
+# Start time: 22:26:26 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.module_fifo_regs_no_flags_tb(behave)
+# Loading work.module_fifo_regs_no_flags(rtl)
+add wave -position insertpoint sim:/module_fifo_regs_no_flags_tb/*
+run
+run
+force -freeze sim:/module_fifo_regs_no_flags_tb/r_WR_EN 1 0
+force -freeze sim:/module_fifo_regs_no_flags_tb/w_FULL 1 0
+run
+force -freeze sim:/module_fifo_regs_no_flags_tb/r_CLOCK 1 0
+force -freeze sim:/module_fifo_regs_no_flags_tb/r_WR_EN 1 0
+force -freeze sim:/module_fifo_regs_no_flags_tb/w_FULL 1 0
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# End time: 23:01:22 on Jun 29,2022, Elapsed time: 0:34:56
+# Errors: 2, Warnings: 3
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.module_fifo_regs_no_flags_tb
+# vsim -gui work.module_fifo_regs_no_flags_tb 
+# Start time: 23:01:57 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.module_fifo_regs_no_flags_tb(behave)
+# Loading work.module_fifo_regs_no_flags(rtl)
+add wave -position insertpoint sim:/module_fifo_regs_no_flags_tb/*
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# End time: 23:13:47 on Jun 29,2022, Elapsed time: 0:11:50
+# Errors: 2, Warnings: 2
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.traffic_control_tb
+# vsim -gui work.traffic_control_tb 
+# Start time: 23:19:12 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.traffic_control_tb(model)
+# Loading work.traffic_control(traffic)
+add wave -position insertpoint sim:/traffic_control_tb/*
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/intelFPGA_pro/Traffic/IntraFifo.mpf).  File can not be renamed.
+# End time: 23:25:55 on Jun 29,2022, Elapsed time: 0:06:43
+# Errors: 2, Warnings: 5
+# Compile of Fifo.vhd was successful.
+# Compile of fifotst.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.traffic_control_tb
+# vsim -gui work.traffic_control_tb 
+# Start time: 23:26:50 on Jun 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.traffic_control_tb(model)
+# Loading work.traffic_control(traffic)
+add wave -position insertpoint sim:/traffic_control_tb/*
+run

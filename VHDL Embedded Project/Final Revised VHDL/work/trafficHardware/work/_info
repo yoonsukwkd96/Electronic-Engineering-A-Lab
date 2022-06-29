@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/intelFPGA_pro/Traffic
+Elight_controller
+Z0 w1655917355
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z5 dE:/intelFPGA_pro/Traffic/work/trafficHardware
+Z6 8C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightController.vhd
+Z7 FC:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightController.vhd
+l0
+L46 1
+V:S:eaB]EF_Cn`hCJdJ>7D0
+!s100 ;`8[Q<jZbEIZWjJ9F<SUL0
+Z8 OV;C;2021.1;73
+32
+Z9 !s110 1656008550
+!i10b 1
+Z10 !s108 1656008550.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightController.vhd|
+Z12 !s107 C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightController.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Alc
+R1
+R2
+R3
+R4
+DEx4 work 16 light_controller 0 22 :S:eaB]EF_Cn`hCJdJ>7D0
+!i122 0
+l100
+L75 478
+Vcg?=D0mZNRDfaV2Fgb6Q@3
+!s100 AYjoaE0S[U1CzAXCERhQR1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Etst_bench
+R0
+R3
+R4
+!i122 1
+R5
+Z15 8C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightControllerTB.vhd
+Z16 FC:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightControllerTB.vhd
+l0
+L5 1
+V7<GHj3`I`hQ`2HMobDe4l2
+!s100 X6KDzj1La4@9[cFz_a]Tg3
+R8
+32
+R9
+!i10b 1
+R10
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightControllerTB.vhd|
+!s107 C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightControllerTB.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 9 tst_bench 0 22 7<GHj3`I`hQ`2HMobDe4l2
+!i122 1
+l61
+L8 211
+VYAh:VKkUD:Pg9J>RaemTM1
+!s100 lz]jFDnKlnCk2k?9[j3F:3
+R8
+32
+R9
+!i10b 1
+R10
+R17
+Z18 !s107 C:/Users/Asus/Desktop/8th Semester/Advanced_Embedded_Lab-Hardware_Engineering_Lab-main/Hardware Engineering Lab/Project/lightControllerTB.vhd|
+!i113 1
+R13
+R14
